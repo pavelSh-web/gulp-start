@@ -1,0 +1,19 @@
+{
+  "name": "gulp",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Pavel Shorokhov <web.shorohov@yandex.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/src/bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}
