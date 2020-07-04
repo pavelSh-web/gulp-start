@@ -2,9 +2,6 @@
   "name": "gulp",
   "description": "",
   "main": "gulpfile.js",
-  "authors": [
-    "Pavel Shorokhov <web.shorohov@yandex.ru>"
-  ],
   "license": "ISC",
   "homepage": "",
   "ignore": [
