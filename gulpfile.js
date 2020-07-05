@@ -19,7 +19,7 @@ var path = {
         libs: 'app/src/assets/libs/',
         js: 'app/build/assets/js/',
         css: 'app/build/assets/css/',
-        img: 'app/build/assets/img/',
+        image: 'app/build/assets/image/',
         fonts: 'app/build/assets/fonts/'
     },
     src: {
@@ -28,7 +28,7 @@ var path = {
         libs: 'app/src/assets/libs/**/*.*',
         js: 'app/src/assets/js/main.js',
         style: 'app/src/assets/style/main.scss',
-        img: 'app/src/assets/img/**/*.*',
+        image: 'app/src/assets/image/**/*.*',
         fonts: 'app/src/assets/fonts/**/*.*'
     },
     watch: {
@@ -37,7 +37,7 @@ var path = {
         libs: 'app/src/assets/libs/**/*.*',
         js: 'app/src/assets/js/**/*.js',
         css: 'app/src/assets/style/**/*.scss',
-        img: 'app/src/assets/img/**/*.*',
+        image: 'app/src/assets/image/**/*.*',
         fonts: 'app/srs/assets/fonts/**/*.*'
     },
     clean: './app/build'
@@ -140,7 +140,7 @@ gulp.task('favicon:build', function () {
 
 // обработка картинок
 gulp.task('image:build', function () {
-    gulp.src(path.src.img) // путь с исходниками картинок
+    gulp.src(path.src.image) // путь с исходниками картинок
         .pipe(cache(imagemin([ // сжатие изображений
             imagemin.gifsicle({
                 interlaced: true
@@ -157,7 +157,7 @@ gulp.task('image:build', function () {
                 }]
             })
         ])))
-        .pipe(gulp.dest(path.build.img)); // выгрузка готовых файлов
+        .pipe(gulp.dest(path.build.image)); // выгрузка готовых файлов
 });
 
 // удаление каталога build 
@@ -190,7 +190,7 @@ gulp.task('watch', function () {
     gulp.watch(path.watch.css, ['css:build']);
     gulp.watch(path.watch.js, ['js:build']);
     gulp.watch(path.watch.libs, ['libs-js:build','libs-css:build']);
-    gulp.watch(path.watch.img, ['image:build']);
+    gulp.watch(path.watch.image, ['image:build']);
     gulp.watch(path.watch.fonts, ['fonts:build']);
 });
 
