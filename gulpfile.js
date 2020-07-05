@@ -189,7 +189,7 @@ gulp.task('watch', function () {
     gulp.watch(path.watch.html, ['html:build']);
     gulp.watch(path.watch.css, ['css:build']);
     gulp.watch(path.watch.js, ['js:build']);
-    gulp.watch(path.watch.libs, ['libs-js:build','libs-css:build']);
+    gulp.watch(path.watch.libs, ['libs-js:build', 'libs-css:build']);
     gulp.watch(path.watch.image, ['image:build']);
     gulp.watch(path.watch.fonts, ['fonts:build']);
 });
