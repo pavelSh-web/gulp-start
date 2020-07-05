@@ -14,38 +14,38 @@ var autoprefixerList = [
 /* пути к исходным файлам (src), к готовым файлам (build), а также к тем, за изменениями которых нужно наблюдать (watch) */
 var path = {
     build: {
-        favicon: 'assets/build/',
-        html: 'assets/build/',
-        libs: 'assets/src/libs/',
-        js: 'assets/build/js/',
-        css: 'assets/build/css/',
-        img: 'assets/build/img/',
-        fonts: 'assets/build/fonts/'
+        favicon: 'app/build/',
+        html: 'app/build/',
+        libs: 'app/src/assets/libs/',
+        js: 'app/build/assets/js/',
+        css: 'app/build/assets/css/',
+        img: 'app/build/assets/img/',
+        fonts: 'app/build/assets/fonts/'
     },
     src: {
-        favicon: 'assets/src/*.ico',
-        html: 'assets/src/*.html',
-        libs: 'assets/src/libs/**/*.*',
-        js: 'assets/src/js/main.js',
-        style: 'assets/src/style/main.scss',
-        img: 'assets/src/img/**/*.*',
-        fonts: 'assets/src/fonts/**/*.*'
+        favicon: 'app/src/*.ico',
+        html: 'app/src/*.html',
+        libs: 'app/src/assets/libs/**/*.*',
+        js: 'app/src/assets/js/main.js',
+        style: 'app/src/assets/style/main.scss',
+        img: 'app/src/assets/img/**/*.*',
+        fonts: 'app/src/assets/fonts/**/*.*'
     },
     watch: {
-        favicon: 'assets/src/*.ico',
-        html: 'assets/src/**/*.html',
-        libs: 'assets/src/libs/**/*.*',
-        js: 'assets/src/js/**/*.js',
-        css: 'assets/src/style/**/*.scss',
-        img: 'assets/src/img/**/*.*',
-        fonts: 'assets/srs/fonts/**/*.*'
+        favicon: 'app/src/*.ico',
+        html: 'app/src/**/*.html',
+        libs: 'app/src/assets/libs/**/*.*',
+        js: 'app/src/assets/js/**/*.js',
+        css: 'app/src/assets/style/**/*.scss',
+        img: 'app/src/assets/img/**/*.*',
+        fonts: 'app/srs/assets/fonts/**/*.*'
     },
-    clean: './assets/build'
+    clean: './app/build'
 };
 /* настройки сервера */
 var config = {
     server: {
-        baseDir: './assets/build'
+        baseDir: './app/build'
     },
     notify: false
 };
